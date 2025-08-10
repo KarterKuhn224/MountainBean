@@ -4,7 +4,10 @@
   src: url('/fonts/mbc.woff2') format('woff2');
   font-display: swap;
 }
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" href="/fonts/mbc.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/main.css">
 :root { --bg:#0c0c0c; --ink:#1b1b1b; --text:#1d1d1f; --white:#fff; --accent:#7c3e1d; --accent-2:#c2794f; }
 * { box-sizing: border-box; }
 body { margin:0; font-family: MBC, system-ui, -apple-system, Roboto, Arial, sans-serif; line-height:1.5; color:#222; }
