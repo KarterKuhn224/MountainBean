@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>%%PAGE_TITLE%% · Mountain Bean Café</title>
+  <meta name="description" content="%%META_DESCRIPTION%%">
+  <link rel="preload" href="/fonts/mbc.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/main.css">
+  <!-- Google Analytics (replace G-XXXX with your GA4 ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+    gtag('config', 'G-XXXX');
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="/prosite/index.html">Mountain Bean Café</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/prosite/index.html">Home</a>
+      <a href="/prosite/about.html">About</a>
+      <a href="/prosite/subscription.html">Subscription</a>
+      <a href="/prosite/gallery.html">Gallery</a>
+      <a href="/prosite/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">%%MAIN_CONTENT%%</main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Mountain Bean Café • Greeley, CO</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
